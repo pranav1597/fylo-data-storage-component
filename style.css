@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    background-image: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+}
+
+.flex{
+    /* border: 2px solid red; */
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 7em;
+}
+
+.flex-one,.flex-two{
+    /* border: 2px solid yellow; */
+    padding: 1.5em;
+    background: hsl(228, 56%, 26%);
+    
+    
+}
+/* flex-one section */
+
+
+.flex-one{
+    border-radius: 8px 100px 8px 8px ;
+    padding-left: 2.5em;
+}
+.logo-section{
+    padding: 1em 0;
+    
+}
+
+.logo{
+    width: 50%;
+}
+
+.icon-section{
+    padding: 1em 0;
+    display: flex;
+    
+}
+
+.icon{
+    /* border: 2px solid green; */
+    padding:.7em .8em;
+    background: hsl(229, 57%, 11%);
+    border-radius: 8px;
+    width: 40px;
+}
+
+.icon + .icon{
+    margin-left: 1em;
+}
+
+
+
+/* flex two section */
+
+.flex-two{
+    margin-top: 1em;
+    padding-left: 2em;
+    border-radius: 8px;
+    
+}
+.progress-title{
+    text-align: center;
+    font-size: 13px;
+    color: hsl(243, 100%, 93%);
+    width: 95%;
+    /* border: 2px solid green; */
+}
+
+/* progress bar */
+
+.progress{
+    /* border: 2px solid green; */
+    width: 95%;
+    min-height: 15px;
+    border-radius: 100px;
+    background: hsla(229, 57%, 11%,0.7);
+    display: flex;
+    align-items: center;
+}
+
+.progressing{
+    width: 80%;
+    min-height: 11.5px;
+    border-radius: 100px;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    margin-left: .1em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.circle{
+    width: 7.5px;
+    min-height: 7.5px;
+    background: white;
+    border-radius: 100%;
+    margin-right: .2em;
+}
+
+/* progress position */
+    .progress-pos{
+        display: flex;
+        justify-content: space-between;
+        /* border: 2px solid green; */
+        width: 95%;
+        color:white;
+        font-size: 11px;
+        
+    }
+
+    .progress-start{
+        /* border: 2px solid orange; */
+    }
+
+
+
+/* progress left */
+
+.progress-left{
+    background: white;
+    width: 45%;
+    position: absolute;
+    border-radius: 8px;
+    margin:0 0 0 10%;
+}
+
+.progress-left--title{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .8em;
+}
+.progress-left--title h1{
+    color: hsl(229, 57%, 11%);
+    font-size: 2.5em;
+    margin:0;
+    
+}
+.progress-left--title p{
+    font-size: .8em;
+    margin-left: .5em;
+}
+
+/* footer */
+
+.attribution{
+    margin-top: 5em;
+    text-align: center;
+    color: white;
+}
+
+.attribution a{
+    text-decoration: none;
+    color:hsl(243, 100%, 77%);
+    font-weight: 700;
+}
+
+
+/* FOR DESKTOP SCREEN */
+
+@media (min-width:376px){
+    body{
+        background:hsl(229, 57%, 11%);
+        background-image: url(images/bg-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 250px;
+    }
+
+    .flex{
+        display: flex;
+        
+        /* border: 2px solid red; */
+        margin-top: 12em;
+        width: 70%;
+    }
+
+    /* flex one section */
+
+    .flex-one{
+        width:20em;
+        border-radius: 8px 80px 8px 8px ;
+    }
+
+    
+
+    /* flex two section */
+
+    .flex-two{
+        margin-left: 1.5em;
+        margin-top: 3em;
+        width: 50em;
+    }
+
+    /* progress bar */
+
+    .progress-title{
+        text-align: left;
+
+    }
+
+    /* progress left */
+
+    .progress-left{
+        background: white;
+        width: 12%;
+        position: absolute;
+        border-radius: 8px 8px 0 8px;
+        margin:-11% 0 0 29%;
+    }
+
+    .progress-left::after{
+        content: " ";
+        position: absolute;
+        border-top:10px solid white;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid white;
+        margin-left: 143px;
+    }
+}
