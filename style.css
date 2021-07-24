@@ -9,6 +9,8 @@ body{
     font-family: 'Raleway', sans-serif;
     background-image: url(images/bg-mobile.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 .flex{
@@ -170,7 +172,7 @@ body{
 
 /* FOR DESKTOP SCREEN */
 
-@media (min-width:376px){
+@media (min-width:550px){
     body{
         background:hsl(229, 57%, 11%);
         background-image: url(images/bg-desktop.png);
@@ -178,13 +180,14 @@ body{
         background-size: cover;
         background-position: center 250px;
     }
+    
 
     .flex{
         display: flex;
-        
-        /* border: 2px solid red; */
+        justify-content: center;
+        align-content: center;
         margin-top: 12em;
-        width: 70%;
+        width: 60%;
     }
 
     /* flex one section */
@@ -215,10 +218,11 @@ body{
 
     .progress-left{
         background: white;
-        width: 12%;
-        position: absolute;
+        width: 150px;
+        position: relative;
         border-radius: 8px 8px 0 8px;
-        margin:-11% 0 0 29%;
+        margin-left: 24vw;
+        margin-top: -10em;
     }
 
     .progress-left::after{
@@ -228,6 +232,7 @@ body{
         border-left: 10px solid transparent;
         border-bottom: 10px solid transparent;
         border-right: 10px solid white;
-        margin-left: 143px;
+        right:0;
+        
     }
 }
